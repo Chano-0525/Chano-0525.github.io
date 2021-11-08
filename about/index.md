@@ -7,7 +7,7 @@
 
 ### 教育经历
 
-* 2022/02 - now : 悉尼大学 信息技术/ The University of Sydney Software Engineer
+* 2022/02 - now : 悉尼大学 信息技术/ The University of Sydney Master of Information Technology
 
 * 2017/09 - 2021/06: 扬州大学 软件工程专业 / YangZhou University Software Engineer
 
