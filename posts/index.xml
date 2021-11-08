@@ -12,5 +12,12 @@
     <guid>https://example.com/first_post/</guid>
     <description><![CDATA[This is my first time to commit my article!
 Studying numpy and pandas recently]]></description>
+</item><item>
+    <title>Python可视化</title>
+    <link>https://example.com/python%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+    <pubDate>Mon, 08 Nov 2021 09:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/python%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+    <description><![CDATA[此笔记记载通过使用python matplotlib等数据可视化工具的方法。 Python matplotlib marplotlib的总体概念 最大的概念是figure，每个f]]></description>
 </item></channel>
 </rss>
