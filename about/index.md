@@ -7,9 +7,9 @@
 
 ### 教育经历
 
-* 2022/02 - now : 悉尼大学 信息技术/ The University of Sydney Master of Information Technology
+* 2022/02 - now : 悉尼大学 信息技术专业/ The University of Sydney Master of Information Technology
 
-* 2017/09 - 2021/06: 扬州大学 软件工程专业 / YangZhou University Software Engineer
+* 2017/09 - 2021/06: 扬州大学 软件工程专业 / YangZhou University Software Engineering
 
 ### 获奖经历
 
@@ -26,11 +26,14 @@
 ### 联系方式
 QQ: 932931503
 
+WeChat：Samuel_525
+
 E-Mail : chaowong0525@outlook.com|| 932931503@qq.com
 
 ### 友链
 
 * [诸晨冬的博客](https://www.chendongzhu.top/)
+* [许钱洲的博客](https://yzuxqz.github.io/)
 
 ### 关于本博客
 [LoveIt :(far fa-heart):](https://github.com/dillonzq/LoveIt) 是一个由 [Dillon](https://dillonzq.com) 开发的**简洁**、**优雅**且**高效**的 [Hugo](https://gohugo.io/) 博客主题。
