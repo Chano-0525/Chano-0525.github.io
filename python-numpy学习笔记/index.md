@@ -1,4 +1,4 @@
-# Python可视化
+# Python-Numpy
 
 
 # Numpy库介绍
@@ -925,7 +925,7 @@ np.random.shuffle(a) #将a的元素的位置都会进行随机更换
 之前的课程中，为了方便大家理解，我们说`axis=0`代表的是行，`axis=1`代表的是列。但其实不是这么简单理解的。这里我们专门用一节来解释一下这个`axis`轴的概念。
 
 简单来说， **最外面的括号代表着 axis=0，依次往里的括号对应的 axis 的计数就依次加 1**。什么意思呢？下面再来解释一下。 
-![](D:\Code\myBlog\static\images\axis1.png)  
+  ![](Python Numpy学习笔记.assets/axis1.png)
 
 最外面的括号就是`axis=0`，里面两个子括号`axis=1`。
 **操作方式：如果指定轴进行相关的操作，那么他会使用轴下的每个直接子元素的第0个，第1个，第2个...分别进行相关的操作。**
@@ -989,11 +989,11 @@ array([8, 5, 8])
 
 ## 三维以上数组：
 
-![](D:\Code\myBlog\static\images\axis2.png)
+![](Python Numpy学习笔记.assets/axis2.png)
 按照之前的理论，如果以上数组按照`axis=0`的方式进行相加，得到的结果如下：
-![](D:\Code\myBlog\static\images\axis3.png)
+![](Python Numpy学习笔记.assets/axis3.png)
 如果是按照`axis=1`的方式进行相加，得到的结果如下：
-![](D:\Code\myBlog\static\images\axis4.png)
+![](Python Numpy学习笔记.assets/axis4.png)
 
 
 

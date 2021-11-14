@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Python可视化 - Chano&#39;s Blog</title><meta name="Description" content="关于Python数据分析常用库-Numpy的笔记"><meta property="og:title" content="Python可视化" />
+        <title>Python-Numpy - Chano&#39;s Blog</title><meta name="Description" content="关于Python数据分析常用库-Numpy的笔记"><meta property="og:title" content="Python-Numpy" />
 <meta property="og:description" content="关于Python数据分析常用库-Numpy的笔记" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" /><meta property="og:image" content="https://example.com/logo.png"/><meta property="article:section" content="posts" />
@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://example.com/logo.png"/>
 
-<meta name="twitter:title" content="Python可视化"/>
+<meta name="twitter:title" content="Python-Numpy"/>
 <meta name="twitter:description" content="关于Python数据分析常用库-Numpy的笔记"/>
 <meta name="application-name" content="Chano&#39;s Blog">
 <meta name="apple-mobile-web-app-title" content="Chano&#39;s Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -24,12 +24,12 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Python可视化",
+        "headline": "Python-Numpy",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Python, numpy","wordcount":  12845 ,
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Python, numpy","wordcount":  12957 ,
         "url": "https:\/\/example.com\/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/","datePublished": "2021-11-14T09:00:00+08:00","dateModified": "2021-11-14T09:00:00+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
@@ -104,9 +104,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Python可视化</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Python-Numpy</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Chano</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E5%AD%A6%E4%B9%A0/"><i class="far fa-folder fa-fw"></i>学习</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-14">2021-11-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 12845 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-14">2021-11-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 12957 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 26 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -1702,14 +1702,7 @@
 <h1 id="axis理解">Axis理解</h1>
 <p>之前的课程中，为了方便大家理解，我们说<code>axis=0</code>代表的是行，<code>axis=1</code>代表的是列。但其实不是这么简单理解的。这里我们专门用一节来解释一下这个<code>axis</code>轴的概念。</p>
 <p>简单来说， <strong>最外面的括号代表着 axis=0，依次往里的括号对应的 axis 的计数就依次加 1</strong>。什么意思呢？下面再来解释一下。 
-<img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis1.png"
-        data-srcset="D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis1.png, D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis1.png 1.5x, D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis1.png 2x"
-        data-sizes="auto"
-        alt="D:\Code\myBlog\static\images\axis1.png"
-        title="D:\Code\myBlog\static\images\axis1.png" /></p>
+![](Python Numpy学习笔记.assets/axis1.png)</p>
 <p>最外面的括号就是<code>axis=0</code>，里面两个子括号<code>axis=1</code>。
 <strong>操作方式：如果指定轴进行相关的操作，那么他会使用轴下的每个直接子元素的第0个，第1个，第2个&hellip;分别进行相关的操作。</strong></p>
 <p>现在我们用刚刚理解的方式来做几个操作。比如现在有一个二维的数组：</p>
@@ -1806,32 +1799,11 @@
 </li>
 </ol>
 <h2 id="三维以上数组">三维以上数组：</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis2.png"
-        data-srcset="D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis2.png, D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis2.png 1.5x, D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis2.png 2x"
-        data-sizes="auto"
-        alt="D:\Code\myBlog\static\images\axis2.png"
-        title="D:\Code\myBlog\static\images\axis2.png" />
+<p>![](Python Numpy学习笔记.assets/axis2.png)
 按照之前的理论，如果以上数组按照<code>axis=0</code>的方式进行相加，得到的结果如下：
-<img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis3.png"
-        data-srcset="D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis3.png, D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis3.png 1.5x, D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis3.png 2x"
-        data-sizes="auto"
-        alt="D:\Code\myBlog\static\images\axis3.png"
-        title="D:\Code\myBlog\static\images\axis3.png" />
+![](Python Numpy学习笔记.assets/axis3.png)
 如果是按照<code>axis=1</code>的方式进行相加，得到的结果如下：
-<img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis4.png"
-        data-srcset="D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis4.png, D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis4.png 1.5x, D:%5cCode%5cmyBlog%5cstatic%5cimages%5caxis4.png 2x"
-        data-sizes="auto"
-        alt="D:\Code\myBlog\static\images\axis4.png"
-        title="D:\Code\myBlog\static\images\axis4.png" /></p>
+![](Python Numpy学习笔记.assets/axis4.png)</p>
 <h1 id="通用函数">通用函数</h1>
 <h2 id="一元函数">一元函数：</h2>
 <table>
@@ -2179,7 +2151,7 @@
                             <a class="link-to-markdown" href="/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://example.com/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="Python可视化" data-hashtags="Python,numpy"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://example.com/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-hashtag="Python"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://example.com/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="Python可视化"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://example.com/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="Python可视化"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://example.com/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="Python可视化"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://example.com/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="Python-Numpy" data-hashtags="Python,numpy"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://example.com/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-hashtag="Python"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://example.com/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="Python-Numpy"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://example.com/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="Python-Numpy"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://example.com/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title="Python-Numpy"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
