@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Python, numpy","wordcount":  12957 ,
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Python, numpy","wordcount":  12845 ,
         "url": "https:\/\/example.com\/python-numpy%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/","datePublished": "2021-11-14T09:00:00+08:00","dateModified": "2021-11-14T09:00:00+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
@@ -106,7 +106,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Python-Numpy</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Chano</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E5%AD%A6%E4%B9%A0/"><i class="far fa-folder fa-fw"></i>学习</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-14">2021-11-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 12957 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-14">2021-11-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 12845 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 26 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -1702,7 +1702,14 @@
 <h1 id="axis理解">Axis理解</h1>
 <p>之前的课程中，为了方便大家理解，我们说<code>axis=0</code>代表的是行，<code>axis=1</code>代表的是列。但其实不是这么简单理解的。这里我们专门用一节来解释一下这个<code>axis</code>轴的概念。</p>
 <p>简单来说， <strong>最外面的括号代表着 axis=0，依次往里的括号对应的 axis 的计数就依次加 1</strong>。什么意思呢？下面再来解释一下。 
-![](Python Numpy学习笔记.assets/axis1.png)</p>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="../../static/images/axis1.png"
+        data-srcset="../../static/images/axis1.png, ../../static/images/axis1.png 1.5x, ../../static/images/axis1.png 2x"
+        data-sizes="auto"
+        alt="../../static/images/axis1.png"
+        title="../../static/images/axis1.png" /></p>
 <p>最外面的括号就是<code>axis=0</code>，里面两个子括号<code>axis=1</code>。
 <strong>操作方式：如果指定轴进行相关的操作，那么他会使用轴下的每个直接子元素的第0个，第1个，第2个&hellip;分别进行相关的操作。</strong></p>
 <p>现在我们用刚刚理解的方式来做几个操作。比如现在有一个二维的数组：</p>
@@ -1799,11 +1806,32 @@
 </li>
 </ol>
 <h2 id="三维以上数组">三维以上数组：</h2>
-<p>![](Python Numpy学习笔记.assets/axis2.png)
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="../../static/images/axis2.png"
+        data-srcset="../../static/images/axis2.png, ../../static/images/axis2.png 1.5x, ../../static/images/axis2.png 2x"
+        data-sizes="auto"
+        alt="../../static/images/axis2.png"
+        title="../../static/images/axis2.png" />
 按照之前的理论，如果以上数组按照<code>axis=0</code>的方式进行相加，得到的结果如下：
-![](Python Numpy学习笔记.assets/axis3.png)
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="../../static/images/axis3.png"
+        data-srcset="../../static/images/axis3.png, ../../static/images/axis3.png 1.5x, ../../static/images/axis3.png 2x"
+        data-sizes="auto"
+        alt="../../static/images/axis3.png"
+        title="../../static/images/axis3.png" />
 如果是按照<code>axis=1</code>的方式进行相加，得到的结果如下：
-![](Python Numpy学习笔记.assets/axis4.png)</p>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="../../static/images/axis4.png"
+        data-srcset="../../static/images/axis4.png, ../../static/images/axis4.png 1.5x, ../../static/images/axis4.png 2x"
+        data-sizes="auto"
+        alt="../../static/images/axis4.png"
+        title="../../static/images/axis4.png" /></p>
 <h1 id="通用函数">通用函数</h1>
 <h2 id="一元函数">一元函数：</h2>
 <table>
